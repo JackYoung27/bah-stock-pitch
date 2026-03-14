@@ -7,6 +7,7 @@ Research repo for a long-only pitch on Booz Allen Hamilton (BAH).
 - `scripts/build_quarterly_financials.py`: pulls quarterly revenue, backlog, funded backlog, unfunded backlog, priced options backlog, and book-to-bill from SEC filings.
 - `scripts/01_backlog_conversion_model.py`: computes forward backlog conversion metrics and writes the backlog conversion output.
 - `scripts/federal_contract_tracker.py`: pulls recent BAH federal contract actions from USAspending and writes contract summary files.
+- `scripts/ai_contracts_search.py`: searches USASpending.gov for AI-related federal contracts across BAH, Leidos, SAIC, and CACI including subsidiaries, using both keyword and NAICS code search.
 
 ## Data Files
 
@@ -17,12 +18,14 @@ Research repo for a long-only pitch on Booz Allen Hamilton (BAH).
 - `data/processed/bah_agency_breakdown.csv`: top agency exposure from the contract pull.
 - `data/processed/bah_sector_breakdown.csv`: DoD versus Civilian split from the contract pull.
 - `data/processed/cleared_workforce_data.csv`: compact peer table for cleared employees by company.
+- `data/raw/ALL_contractors_AI_contracts_final.csv`: AI-related contract awards 2019–2025 for all four contractors, merged from keyword and NAICS searches.
 
 ## Run
 
 - `python scripts/build_quarterly_financials.py`
 - `python scripts/01_backlog_conversion_model.py`
 - `python scripts/federal_contract_tracker.py`
+- `python scripts/ai_contracts_search.py`
 
 ## Dependencies
 
